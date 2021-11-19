@@ -1,0 +1,5 @@
+DB-HOST: database-demo.cvxphb4sa0dg.ap-southeast-1.rds.amazonaws.com:3306
+DB-USER: admin
+DB-PASSWORD: Password2020!
+DB-DEFAULT: weather
+WEATHER-API: 1ce5d7e6675318a436c78598c91f52ff

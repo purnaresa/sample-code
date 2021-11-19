@@ -1,0 +1,5 @@
+DB-HOST: xxxx:3306
+DB-USER: xxx
+DB-PASSWORD: xxxx
+DB-DEFAULT: xxx
+WEATHER-API: xxxx
