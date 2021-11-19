@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
@@ -40,7 +39,6 @@ func getSecret() {
 		Username  string `json:"username"`
 		Password  string `json:"password"`
 		Host      string `json:"host"`
-		Port      int    `json:"port"`
 		DBDefault string `json:"db-default"`
 	}
 	type weather struct {
@@ -90,7 +88,7 @@ func getSecret() {
 	viper.Set("WEATHER-API", w.Api)
 	viper.Set("DB-USER", db.Username)
 	viper.Set("DB-PASSWORD", db.Password)
-	viper.Set("DB-HOST", fmt.Sprintf("%s:%d", db.Host, db.Port))
+	viper.Set("DB-HOST", db.Host)
 	viper.Set("DB-DEFAULT", db.DBDefault)
 
 }
