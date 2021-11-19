@@ -1,0 +1,3 @@
+DB-CREDENTIAL: dev/db-test
+WEATHER-CREDENTIAL: dev/weather-api
+REGION: ap-southeast-1

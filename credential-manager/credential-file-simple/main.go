@@ -24,5 +24,5 @@ func init() {
 func main() {
 	log.WithField("user", viper.GetString("DB-USER")).Info("db-credentials")
 	log.WithField("host", viper.GetString("DB-HOST")).Info("db-credentials")
-	log.WithField("api-key", viper.GetString("DB-HOST")).Info("weather-api")
+	log.WithField("api-key", viper.GetString("WEATHER-API")).Info("weather-api")
 }
